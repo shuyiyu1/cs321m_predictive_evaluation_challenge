@@ -1,5 +1,8 @@
-# Per-Benchmark Specialist Submission
+# IRT + MLP Ensemble
 
-Routes each benchmark/domain to a different blend of IRT, MLP, and complex
-variants to reduce negative transfer across math, code, tool-use, preference,
-vision, and general-reasoning benchmarks.
+This submission blends two different approaches:
+
+- IRT-style subject ability plus predicted item easiness.
+- The previously best private-scoring MLP variant.
+
+The blend is logit-space, with 58% IRT and 42% MLP.
